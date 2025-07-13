@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Survey</title>
+</head>
+<body>
+
+  <h1 id="title">Personal Survey</h1>
+  <p id="description">Submit your personal information and contact preferences to keep in touch!</p>
+
+  <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" name="name" type="text" placeholder="Please enter your full name" required>
+
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="Please enter your full email" required>
+
+      <label id="number-label" for="number">Age (1–120):</label>
+      <input id="number" name="number" type="number" min="1" max="120" placeholder="Please enter your age">
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">Please select which option best suits you:</label>
+      <select id="dropdown" name="role">
+        <option value="">Select one</option>
+        <option value="pupil">Pupil</option>
+        <option value="mentor">Mentor</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Preferences:</legend>
+      <label><input type="radio" name="contact" value="email" class="inline"> Email</label>
+      <label><input type="radio" name="contact" value="phone" class="inline"> Phone</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Communication Preferences:</legend>
+      <label><input type="checkbox" value="newsletter" class="inline"> Newsletter</label>
+      <label><input type="checkbox" value="updates" class="inline"> Periodic Updates</label>
+      <label><input type="checkbox" value="offers" class="inline"> Promotional Offers</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="comments">Any additional thoughts?</label>
+      <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Please enter your thoughts here..."></textarea>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
